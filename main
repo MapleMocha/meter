@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf $HOME/.img && mkdir $HOME/.img
 rm usr && ln -s $PREFIX $HOME
-rm $HOME/.hushlogin && touch $HOME/.hushlogin
+rm -f $HOME/.hushlogin && touch $HOME/.hushlogin
 mkdir -p $HOME/.config/tmux/plugins/catppuccin
 mkdir -p $HOME/.config/fish
 
