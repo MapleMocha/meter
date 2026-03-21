@@ -2,6 +2,7 @@
 rm $HOME/.img && mkdir $HOME/.img
 rm usr && ln -s $PREFIX $HOME
 rm $HOME/.hushlogin && touch $HOME/.hushlogin
+mkdir -p $HOME/.config/tmux/plugins/catppuccin
 
 cat > $PREFIX/etc/apt/sources.list << 'EOF'
 deb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main
@@ -22,8 +23,15 @@ apt install -y gperf pkg-config glow lua53 lua52 lua51 nodejs-lts
 apt install -y neovim eza pipes.sh cava starship
 
 gem install lolcat
+
 while true; do
   if git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+    break
+  fi
+done
+
+while true; do
+  if git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
     break
   fi
 done
