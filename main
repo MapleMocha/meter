@@ -1,0 +1,42 @@
+#!/bin/bash
+rm $HOME/.img && mkdir $HOME/.img
+rm usr && ln -s $PREFIX $HOME
+rm $HOME/.hushlogin && touch $HOME/.hushlogin
+
+cat > $PREFIX/etc/apt/sources.list << 'EOF'
+deb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main
+EOF
+apt update && yes | apt upgrade
+
+clear
+echo "install base system..."
+sleep 1
+
+apt install -y fish which gh nmap fzf wget curl fd nodejs
+apt install -y zoxide tree htop openssh tig bat ripgrep jq yq
+apt install -y curl ncdu tmux gdb neofetch proot-distro clang
+apt install -y sqlite golang rust php ruby bc ffmpeg nginx chafa
+apt install -y python python-pip build-essential cmake ninja gettext
+apt install -y libtool autoconf automake doxygen ncurses-utils
+apt install -y gperf pkg-config glow lua53 lua52 lua51 nodejs-lts
+apt install -y neovim eza pipes.sh cava starship
+
+gem install lolcat
+while true; do
+  if git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+    break
+  fi
+done
+
+chsh -s fish
+cp $HOME/meter/config/back.jpg $HOME/.img/
+cp $HOME/meter/config/colors.properties $HOME/.termux/
+cp $HOME/meter/config/termux.properties $HOME/.termux/
+cp $HOME/meter/config/config.fish $HOME/.config/fish/
+cp $HOME/meter/config/font.ttf $HOME/.termux/
+cp $HOME/meter/config/starship.toml $HOME/.config/
+cp $HOME/meter/config/.tmux.conf $HOME/.tmux.conf
+
+mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 733 $PREFIX/bin/pipes
+
+
