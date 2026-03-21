@@ -12,7 +12,7 @@ apt update&& yes | apt install git
 ```
 
 ```bash
-git clone httsp://github.com/MapleMocha/meter.git $HOME/ && rm $HOME/meter/.git
+cd $HOME && git clone httsp://github.com/MapleMocha/meter.git && rm $HOME/meter/.git
 ```
 
 ```bash
