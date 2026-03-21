@@ -1,8 +1,9 @@
 #!/bin/bash
-rm $HOME/.img && mkdir $HOME/.img
+rm -rf $HOME/.img && mkdir $HOME/.img
 rm usr && ln -s $PREFIX $HOME
 rm $HOME/.hushlogin && touch $HOME/.hushlogin
 mkdir -p $HOME/.config/tmux/plugins/catppuccin
+mkdir -p $HOME/.config/fish
 
 cat > $PREFIX/etc/apt/sources.list << 'EOF'
 deb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main
