@@ -3,7 +3,12 @@
 > [!NOTE]
 > **termux install: [termux](https://github.com/termux/termux-app/releases), or you need zerotermux: [zerotermux](https://github.com/hanxinhao000/ZeroTermux/releases)**
 
-![screenshot](which.jpg)
+- **catppuccin**
+- **astronvim**
+- **fish & starship**
+- **victormono font**
+
+![screenshot](Screenshot_20260322_174320_com.termux.jpg)
 
 ### 🚀start
 
