@@ -1,9 +1,9 @@
 # meter
 
-init termux.
+## ide for termux
 
 > [!NOTE]
-> **termux install [termux](https://github.com/termux/termux-app/releases), or zerotermux: [zerotermux](https://github.com/hanxinhao000/ZeroTermux/releases)**
+> **termux install: [termux](https://github.com/termux/termux-app/releases), or you need zerotermux: [zerotermux](https://github.com/hanxinhao000/ZeroTermux/releases)**
 
 ### instal
 
