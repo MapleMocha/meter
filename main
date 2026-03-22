@@ -51,6 +51,9 @@ mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 733 $PREFIX/bin/pipes
 
 read -p "git config --global user.name: " username
 git config --global user.name "$username"
+
+echo ""
+
 read -p "git config --global user.email: " useremail
 git config --global user.email "$useremail"
 
