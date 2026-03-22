@@ -57,5 +57,9 @@ echo ""
 read -p "git config --global user.email: " useremail
 git config --global user.email "$useremail"
 
+echo "install gemini-cli, please wait..."
+
+npm install -g @google/gemini-cli && echo "done✔ reboot the termux."
 clear
+
 
