@@ -8,7 +8,7 @@
 - **fish & starship**
 - **victormono font**
 
-![screenshot](Screenshot_20260322_174320_com.termux.jpg)
+![screenshot](ScreenShot_20260322_174320_com.termux.jpg)
 
 ### 🚀start
 
