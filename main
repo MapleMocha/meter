@@ -49,4 +49,4 @@ cp $HOME/meter/config/.tmux.conf $HOME/.tmux.conf
 
 mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 733 $PREFIX/bin/pipes
 
-
+clear
