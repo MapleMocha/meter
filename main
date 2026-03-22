@@ -47,7 +47,7 @@ cp $HOME/meter/config/font.ttf $HOME/.termux/
 cp $HOME/meter/config/starship.toml $HOME/.config/
 cp $HOME/meter/config/.tmux.conf $HOME/.tmux.conf
 
-mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 733 $PREFIX/bin/pipes
+mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 755 $PREFIX/bin/pipes
 
 read -p "git config --global user.name: " username
 git config --global user.name "$username"
