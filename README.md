@@ -2,8 +2,8 @@
 
 init termux.
 
-**termux install [termux](https://github.com/termux/termux-app/releases)**
-> or zerotermux: [zerotermux](https://github.com/hanxinhao000/ZeroTermux/releases)
+> [!NOTE]
+> **termux install [termux](https://github.com/termux/termux-app/releases), or zerotermux: [zerotermux](https://github.com/hanxinhao000/ZeroTermux/releases)**
 
 ### instal
 
