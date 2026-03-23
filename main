@@ -57,6 +57,8 @@ echo ""
 read -p "git config --global user.email: " useremail
 git config --global user.email "$useremail"
 
+git config --global init.defaultBranch main
+
 echo "install gemini-cli, please wait..."
 
 export GYP_DEFINES="android_ndk_path=''"
