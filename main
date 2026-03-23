@@ -57,10 +57,7 @@ echo ""
 read -p "git config --global user.email: " useremail
 git config --global user.email "$useremail"
 
-git config --global init.defaultBranch main
+echo ""
 
-echo "install gemini-cli, please wait..."
-
-export GYP_DEFINES="android_ndk_path=''"
-npm install -g @google/gemini-cli && echo "done✔ reboot the termux."
+git config --global init.defaultBranch main && echo "done✔ reboot the termux."
 clear
