@@ -21,7 +21,7 @@ apt install -y sqlite golang rust php ruby bc ffmpeg nginx chafa
 apt install -y python python-pip build-essential cmake ninja gettext
 apt install -y libtool autoconf automake doxygen ncurses-utils
 apt install -y gperf pkg-config glow lua53 lua52 lua51 nodejs-lts
-apt install -y neovim eza pipes.sh cava starship
+apt install -y neovim eza pipes.sh cava starship uv
 
 gem install lolcat
 
