@@ -6,7 +6,7 @@
 - **catppuccin**
 - **astronvim**
 - **fish & starship**
-- **victormono font**
+- ~~**victormono font**~~ **MapleMono-NF-CN-Regular**
 
 ![screenshot](ScreenShot_20260322_174320_com.termux.jpg)
 
