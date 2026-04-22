@@ -26,17 +26,10 @@ apt install -y neovim eza pipes.sh cava starship uv
 gem install lolcat
 
 while true; do
-  if git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim; then
-    break
-  fi
-done
-
-while true; do
   if git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux; then
     break
   fi
 done
-
 
 chsh -s fish
 cp $HOME/meter/config/back.jpg $HOME/.img/
